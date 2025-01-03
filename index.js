@@ -23,7 +23,7 @@ connectDB(process.env.MONGODB_URI);
 const app = express();
 
 app.use(cors({
-  origin: "http://localhost:5173", 
+  origin: ['http://localhost:5173','https://pet-adopi.netlify.app/'], 
   methods: "GET,POST,PUT,DELETE", 
   credentials: true, 
 }));
